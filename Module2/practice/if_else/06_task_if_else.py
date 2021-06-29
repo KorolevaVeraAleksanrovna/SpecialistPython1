@@ -5,6 +5,8 @@
 # Формат входных данных: Вводится неотрицательное целое число— номер года.
 # Формат выходных данных: Выведите количество дней в данном году.
 
-year = int(input("Год: "))
-
-# TODO: your code here
+Year = int(input("Year: "))
+if Year%4==0 and Year%100!=0 or Year%400==0:
+    print("366 days")
+else:
+    print("365 days")
