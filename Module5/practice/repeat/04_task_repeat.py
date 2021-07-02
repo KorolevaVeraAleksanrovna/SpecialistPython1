@@ -6,5 +6,12 @@
 # веб-странице и вывода списка остальных страниц.
 
 def pagination(num_items, items_on_page):
+    import math
+    count_pages = num_items / items_on_page
+    return math.ceil(count_pages)
     pass
 
+
+num_items = 1543
+items_on_page = 20
+print(pagination(num_items, items_on_page))
